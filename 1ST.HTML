@@ -1,0 +1,79 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<main>
+    <title>survey.com</title>
+    <link rel="stylesheet" href="mystyle.css" type="text/css">
+    <h1 id="title">SURVEY OF SKILLED STUDENTS</h1>
+    <p id="description"> A special form of a Indian or non Indian students, which records information about education and skills. So fill the form with correct information.</p>
+    <div class="survey">
+        <form id="survey-form">
+
+            <!-- Personal details-->
+            <fieldset class="1">
+                <legend>Personal Details:</legend>
+                <label  id="name-label" for="name">Name </label>
+                <input type="text" id="name" placeholder="Full Name" required> <br>
+
+                <label id="email-label" for="email">Email-ID </label>
+                <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Email Address" required> <br>
+
+                <label  and id="number-label" for="number">Age in years</label>
+                <input type="number" pattern="[0-9]{10}" id="number" placeholder="i.e. 12345" min="0" max="100000"> <br>
+            </fieldset>
+
+
+            <fieldset class="2">
+                <legend>Education Level: </legend>
+                <input type="radio" value="Matriculation" id="one" name="edu">
+                <label for="edu">Matriculation</label><br>
+
+                <input type="radio" value="intermediate" id="two" name="edu">
+                <label for="edu">Intermediate</label><br>
+
+                <input type="radio" value="Diploma" id="three" name="edu">
+                <label for="edu">Diploma</label><br>
+
+                <input type="radio" value="graduation" id="four" name="edu">
+                <label for="edu">Graduation</label><br>
+            </fieldset>
+
+            <fieldset class="3">
+                <legend>Skills:</legend>
+
+                <input type="checkbox" id="a" name="skill" value="Python">
+                <label for="a" name="skill">Python</label><br>
+
+                <input type="checkbox" id="b" name="skill" value="Java">
+                <label for="b" name="skill">Java</label><br>
+
+                <input type="checkbox" id="c" name="skill" value="c">
+                <label for="c" name="skill">C</label><br>
+
+                <input type="checkbox" id="d" name="skill" value="C++">
+                <label for="d" name="skill">C++</label><br>
+
+                <input type="checkbox" id="e" name="skill" value="Web Development">
+                <label for="e" name="skill">Web Development</label><br>
+
+            </fieldset>
+
+            <fieldset class="4">
+                <legend>How much you like our survey?</legend>
+                <label for="area" name="message"></label><br>
+                <textarea id="area" name="message" rows="4" cols="50" placeholder="Write something..."></textarea>
+            </fieldset>
+
+            <label>Are you a citizen of India? </label>
+            <select name="citizen" id="dropdown" >
+                <option value="yes">YES</option>
+                <option value="no">NO</option>
+                <br>
+                <div class="done">
+                    <input type="submit" id="submit">
+                </div>
+
+        </form>
+    </div>
+
+</main>
+
+<footer>&copy 2024   Made by PRADEEP YADAV</footer>
